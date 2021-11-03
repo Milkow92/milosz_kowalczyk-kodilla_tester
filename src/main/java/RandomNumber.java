@@ -7,7 +7,7 @@ public class RandomNumber {
 
     public static void main(String[] args) {
 
-
+        int min = 30;
         RandomNumber number = new RandomNumber();
         number.draw();
         System.out.println("max: " + number.getMax());
