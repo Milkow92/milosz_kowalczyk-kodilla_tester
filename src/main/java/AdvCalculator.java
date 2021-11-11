@@ -7,16 +7,17 @@ public class AdvCalculator {
         switch (userSelected) {
             case "ADD":
                 return a + b;
-            break;
+
+
             case "SUB":
                 return a - b;
-            break;
+
             case "DIV":
                 return a / b;
-            break;
+
             case "MUL":
                 return a * b;
-            break;
+
         }
         return result;
         }

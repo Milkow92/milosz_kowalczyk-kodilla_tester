@@ -1,11 +1,20 @@
 public class Book {
     private String author;
     private String title;
-    Book book = new Book();
 
-    private static Book of(String isaac_asimov, String the_galaxy) {
+    private Book(String author, String title) {
+        this.author = author;
+        this.title = title;
+    }
+
+
+    public static Book of(String author, String title) {
+        return new Book(author, title);
+    }
+
+    public static void main(String[] args) {
         Book book = Book.of("Isaac Asimov", "The Galaxy");
-return book;
+
+
     }
 }
-
