@@ -4,12 +4,18 @@ import com.kodilla.inheritance.homework.OperatingSystem;
 
 public class Computer extends OperatingSystem {
 
-    public static void main(String[] args) {
 
-        Computer computer = new Computer(2021, 11);
+    public Computer(int year, int systemVersion) {
+        super(year, systemVersion);
+    }
 
-        Computer.turnOn();
-        Computer.turnOff();
+    @Override
+    public void turnOn() {
+        System.out.println("computer on");
+    }
 
+    @Override
+    public void turnOff() {
+       System.out.println("computer off");
     }
 }
