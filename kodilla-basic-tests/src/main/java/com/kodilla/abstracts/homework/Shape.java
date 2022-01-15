@@ -8,6 +8,8 @@ public abstract class Shape {
 
 
     public Shape(int polePowierzchni, int obwod) {
+        this.polePowierzchni = polePowierzchni;
+        this.obwod = obwod;
     }
 
     public int obliczPolePowerzchni() {

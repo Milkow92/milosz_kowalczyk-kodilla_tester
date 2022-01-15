@@ -1,7 +1,5 @@
 package com.kodilla.abstracts;
 
-import com.kodilla.inheritance.Car;
-
 public abstract class Animal {
     private int numberOfLegs;
 

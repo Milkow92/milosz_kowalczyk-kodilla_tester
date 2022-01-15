@@ -8,9 +8,9 @@ public class Application3 {
         int involutionResult = calculator.involution(a);
         boolean correct = ResultChecker.assertEquals(25, involutionResult);
         if (correct) {
-            System.out.println("Metoda sum działa poprawnie dla liczby " + a +);
+            System.out.println("Metoda sum działa poprawnie dla liczby " + a );
         } else {
-            System.out.println("Metoda sum nie działa poprawnie dla liczby " + a +);
+            System.out.println("Metoda sum nie działa poprawnie dla liczby " + a );
         }
     }
 }
