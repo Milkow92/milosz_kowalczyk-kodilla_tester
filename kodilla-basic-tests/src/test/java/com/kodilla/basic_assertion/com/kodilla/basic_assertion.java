@@ -4,7 +4,8 @@ package com.kodilla.basic_assertion.com.kodilla;
 import com.kodilla.abstracts.basic_assertion.Calculator;
 import org.junit.jupiter.api.Test;
 
-import static com.kodilla.abstracts.basic_assertion.ResultChecker.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class basic_assertion {
 
