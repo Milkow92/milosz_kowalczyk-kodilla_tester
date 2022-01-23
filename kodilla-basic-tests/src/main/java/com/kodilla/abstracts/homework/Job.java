@@ -6,5 +6,7 @@ public abstract class Job {
 
 
     public Job(int salary, String responsibilities) {
+this.Salary = salary;
+this.responsibilities = responsibilities;
     }
 }
