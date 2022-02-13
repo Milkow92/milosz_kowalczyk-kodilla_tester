@@ -7,8 +7,9 @@ public class CashMachine {
     public CashMachine() {
 
         this.Transactions = new int[0];
-        this. size = 0;
+        this.size = 0;
     }
+
     public void add(int Transaction) {
         this.size++;
         int[] newTab = new int[this.size];
@@ -16,25 +17,52 @@ public class CashMachine {
         newTab[this.size - 1] = Transaction;
         this.Transactions = newTab;
     }
-    public int sum(){
+
+    public int sum() {
         int sum = 0;
-        for (int transaction: Transactions){
+        for (int transaction : Transactions) {
             sum += transaction;
         }
-     return sum;
+        return sum;
     }
-public int contribution(){
+
+    public int contribution() {
         int contribution = 0;
-        for ( int transaction: Transactions){
-            contribution = + transaction;
+        for (int transaction : Transactions) {
+            if (transaction > 0) {
+                contribution += transaction;
+            }
+
         }
         return contribution;
-}
-public int withdraw(){
+    }
+
+    public int withdraw() {
         int withdraw = 0;
-        for ( int transaction: Transactions){
-            withdraw = - transaction;
+        for (int transaction : Transactions) {
+            if (transaction < 0) {
+                withdraw += transaction;
+            }
         }
         return withdraw;
-}
     }
+    public int countContribution(){
+        int contribution = 0;
+        for (int transaction : Transactions) {
+            if (transaction > 0) {
+                contribution ++;
+            }
+
+        }
+        return contribution;
+    }
+    public int countWithdraw(){
+        int withdraw = 0;
+        for (int transaction : Transactions) {
+            if (transaction < 0) {
+                withdraw ++;
+            }
+        }
+        return withdraw;
+    }
+}
